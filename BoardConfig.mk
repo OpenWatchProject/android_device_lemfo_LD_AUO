@@ -1,8 +1,6 @@
 # mt6737 platform boardconfig
 DEVICE_PATH := device/mediatek/infinity
 
-# TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
-
 # Platform
 TARGET_BOARD_PLATFORM := mt6737m
 TARGET_BOOTLOADER_BOARD_NAME := mt6737m
@@ -28,14 +26,16 @@ BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x04000000
 BOARD_TAGS_OFFSET := 0x0e000000
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET)
 
 # Linker
-LINKER_FORCED_SHIM_LIBS := /system/lib/libnetutils.so|libshim_ifc.so
-LINKER_FORCED_SHIM_LIBS += /system/lib/libui.so|libshim_ui.so
-LINKER_FORCED_SHIM_LIBS += /system/lib/libgui.so|libshim_gui.so
+LINKER_FORCED_SHIM_LIBS := \
+	/system/lib/libnetutils.so|libshim_ifc.so \
+	/system/lib/libui.so|libshim_ui.so \
+	/system/lib/libgui.so|libshim_gui.so
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216 
@@ -57,12 +57,9 @@ USE_CAMERA_STUB := true
 # Charger
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
-# Common Properties
-TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
-
 # Cyanogenmod H/W Hooks
 BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
+BOARD_HARDWARE_CLASS := $(DEVICE_PATH)/cmhw
 
 # Dalvik Tweak
 PRODUCT_TAGS += dalvik.gc.type-precise
@@ -80,12 +77,6 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
-# Enable Minikin text layout engine (will be the default soon)
-USE_MINIKIN := true
-
-# Fonts
-EXTENDED_FONT_FOOTPRINT := true
-
 # Light HAL
 TARGET_PROVIDES_LIBLIGHT := true
 
@@ -93,13 +84,13 @@ TARGET_PROVIDES_LIBLIGHT := true
 BOARD_USES_MTK_HARDWARE := true
 
 # RIL
-BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
+BOARD_RIL_CLASS := ../../../$(DEVICE_PATH)/ril
 
 # Seccomp filter
-BOARD_SECCOMP_POLICY := $(LOCAL_PATH)/seccomp
+BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 
 # SELinux
-BOARD_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS := $(DEVICE_PATH)/sepolicy
 
 # Wifi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
