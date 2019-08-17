@@ -1,9 +1,9 @@
-bin/pppd_dt
+bin/pppd_dt|d4b7fe10c077a36ad01ba2695ddd15df692730b9
 
 lib/liba3m.so
 lib/libfs_mgr.so
 lib/libja3m.so
-lib/libMTKAudioTimeStretch.so
+lib/libMTKAudioTimeStretch.so|39c67c57ef80a4bc1f150aa5828350d325d79084
 
 vendor/bin/akmd09911
 vendor/bin/akmd8963
@@ -13,8 +13,8 @@ vendor/bin/autobt
 vendor/bin/autokd
 vendor/bin/bmm050d
 vendor/bin/boot_logo_updater
-vendor/bin/ccci_fsd
-vendor/bin/ccci_mdinit
+vendor/bin/ccci_fsd|76ed7035b5443a9db14ef4cfa25044ad9965cba1
+vendor/bin/ccci_mdinit|c20f38e019d8cc09cb35c08c479cec41a9d3cc96
 vendor/bin/dhcp6c
 vendor/bin/dhcp6ctl
 vendor/bin/dhcp6s
@@ -23,14 +23,14 @@ vendor/bin/fsck_msdos_mtk
 vendor/bin/fuelgauged
 vendor/bin/ged_srv
 vendor/bin/geomagneticd
-vendor/bin/gsm0710muxd
+vendor/bin/gsm0710muxd|41afa266e9a3f456515d3affe4172bb336dc6e11
 vendor/bin/gsm0710muxdmd2
 vendor/bin/lcdc_screen_cap
 vendor/bin/lsm303md
 vendor/bin/magd
 vendor/bin/matv
 vendor/bin/mc6420d
-vendor/bin/md_ctrl
+vendor/bin/md_ctrl|ae1e92d8c2a758ae688e83940aeb3cf8a0041ea2
 vendor/bin/memorydumper
 vendor/bin/memsicd
 vendor/bin/memsicd3416x
@@ -39,9 +39,9 @@ vendor/bin/mnld
 vendor/bin/msensord
 vendor/bin/mtk_agpsd
 vendor/bin/MtkCodecService
-vendor/bin/mtkrild
+vendor/bin/mtkrild|635e769e562dc3e337054e58ccd832bab59e6a74
 vendor/bin/mtkrildmd2
-vendor/bin/muxreport
+vendor/bin/muxreport|b391a6faa56ae3c2bb27aa79edd3e03228e7359e
 vendor/bin/netdiag
 vendor/bin/nvram_agent_binder
 vendor/bin/nvram_daemon
@@ -60,7 +60,7 @@ vendor/bin/spir2cl
 vendor/bin/spm_loader
 vendor/bin/superumount
 vendor/bin/sysenv_daemon
-vendor/bin/terservice
+vendor/bin/terservice|36109129a0206a5fe9c6a5192bc18c4889c7ee6a
 vendor/bin/thermal
 vendor/bin/thermald
 vendor/bin/thermal_manager
@@ -110,7 +110,7 @@ vendor/lib/libaudiocomponentengine.so
 vendor/lib/libaudiocustparam.so
 vendor/lib/libaudiodcrflt.so
 vendor/lib/libaudiomtkdcremoval.so
-vendor/lib/libaudio_param_parser.so
+vendor/lib/libaudio_param_parser.so|be4ac6de56c2f2dd166a3d9e48a1b9ddbf8c7f28
 vendor/lib/libaudiosetting.so
 vendor/lib/libaudiotoolkit.so
 vendor/lib/libawb_wrap.so
@@ -157,7 +157,7 @@ vendor/lib/libcam_platform.so
 vendor/lib/libcam.utils.sensorlistener.so
 vendor/lib/libcam_utils.so
 vendor/lib/libcam.utils.so
-vendor/lib/libccci_util.so
+vendor/lib/libccci_util.so|797fd55ca34502c3fe6c7d87af84ff77374090d9
 vendor/lib/libClearMotionFW.so
 vendor/lib/libcomutils.so
 vendor/lib/libcrypto-ss.so
@@ -206,9 +206,9 @@ vendor/lib/liblic_divx.so
 vendor/lib/liblic_s263.so
 vendor/lib/liblocSDK6c.so
 vendor/lib/libm4u.so
-vendor/lib/libmal.so
+vendor/lib/libmal.so|83df8447b23d4fafdb1bd1fff99a4935f2c21396
 vendor/lib/libmatv_cust.so
-vendor/lib/libmdfx.so
+vendor/lib/libmdfx.so|7e09620e02cba57f83b368e76f856177a372aad4
 vendor/lib/libmdloggerrecycle.so
 vendor/lib/libmemoryDumpEncoder.so
 vendor/lib/libmemorydumper.so
@@ -262,7 +262,7 @@ vendor/lib/libpqservice.so
 vendor/lib/libprogrambinary.so
 vendor/lib/libratconfig.so
 vendor/lib/librilmtkmd2.so
-vendor/lib/librilmtk.so
+vendor/lib/librilmtk.so|d1e6dd2c65de9ccdb93d1d87549bde9631ac1382
 vendor/lib/librrc.so
 vendor/lib/libRSDriver_mtk.so
 vendor/lib/libshowlogo.so
@@ -276,7 +276,7 @@ vendor/lib/libstorage_otp.so
 vendor/lib/libstrongswan.so
 vendor/lib/libSwJpgCodec.so
 vendor/lib/libsysenv.so
-vendor/lib/libterservice.so
+vendor/lib/libterservice.so|3e674334a4d8c772d90d87675573039cc5e780d0
 vendor/lib/libtimestretch.so
 vendor/lib/libtouchfilter.so
 vendor/lib/libudf.so
@@ -291,5 +291,5 @@ vendor/lib/libvp8dec_sa.ca7.so
 vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
 vendor/lib/libwapi.so
-vendor/lib/mtk-rilmd2.so
-vendor/lib/mtk-ril.so
+vendor/lib/mtk-rilmd2.so|460f1fed4671d2f12cc5a3af72f369cb4de762e2
+vendor/lib/mtk-ril.so|d410c21d027b713181ab07124623043329414b7e
