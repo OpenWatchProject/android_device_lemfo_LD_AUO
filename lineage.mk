@@ -10,7 +10,3 @@ PRODUCT_NAME := lineage_infinity
 PRODUCT_BRAND := MediaTek
 PRODUCT_MODEL := Infinity
 PRODUCT_MANUFACTURER := MediaTek
-
-# Boot animation
-TARGET_SCREEN_HEIGHT      := 400
-TARGET_SCREEN_WIDTH       := 400
