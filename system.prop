@@ -14,10 +14,6 @@ qemu.hw.mainkeys=0
 # DRM
 drm.service.enabled=true
 
-# Granular Volume Steps
-ro.config.vc_call_vol_steps=14
-ro.config.media_vol_steps=30
-
 # OMX
 mtk.vdec.waitkeyframeforplay=1
 
