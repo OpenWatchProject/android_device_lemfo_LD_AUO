@@ -112,4 +112,4 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Hack for building without kernel sources
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/zImage
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel
