@@ -1,19 +1,9 @@
-bin/cameraserver
-bin/mediacodec
 bin/pppd_dt
-bin/wpa_cli
-bin/wpa_supplicant
 
 lib/liba3m.so
 lib/libfs_mgr.so
 lib/libja3m.so
-lib/libm.so
 lib/libMTKAudioTimeStretch.so
-lib/libnfc_ndef.so
-lib/libtinyalsa.so
-lib/libtinycompress.so
-lib/libtinyxml.so
-lib/libwpa_client.so
 
 vendor/bin/akmd09911
 vendor/bin/akmd8963
@@ -109,8 +99,6 @@ vendor/lib/hw/gralloc.mt6737m.so
 vendor/lib/hw/hwcomposer.mt6735.so
 vendor/lib/hw/memtrack.mt6737m.so
 vendor/lib/hw/sensors.mt6737m.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
-vendor/lib/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/lib3a.so
 vendor/lib/libaal.so
